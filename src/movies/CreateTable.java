@@ -24,8 +24,8 @@ public class CreateTable
     		  "(ID  SERIAL PRIMARY KEY," +
               " NAME          TEXT    NOT NULL," +
               " YEAR          INT     NOT NULL," +
-      	      " RATING       NUMERIC     NOT NULL," +
-      	    " ACTORS          TEXT    NOT NULL)" ;
+      	      " RATING       NUMERIC     ," +
+      	    " ACTORS          TEXT    )" ;
       stmt.executeUpdate(sql);
       stmt.close();
       c.close();

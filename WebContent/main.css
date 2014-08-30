@@ -1,0 +1,53 @@
+/*=========FONT PATH==========*/
+@font-face {
+  font-family: 'proxima';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Proxima Nova Regular'), url('proxima.woff') format('woff');
+}
+
+/*=========MAIN CSS==========*/
+html,body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	text-align: center;
+	font-family: 'proxima', sans-serif;
+}
+form{
+	text-align: center;
+}
+table{
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+	border: 1px dashed #3e1212;
+}
+input{
+	width: 200px;
+	display: table-cell;
+}
+label{
+	width: 200px;
+	font-weight: bold;
+	/*display: block;*/
+	display: table-cell;
+}
+a, a:visited{
+	text-decoration: none;
+	color: darkred;
+}
+a:hover{
+	color: #3e1212;
+}
+h1 a{
+	color: #9c2f2f;
+}
+td{
+	width: 150px;
+}
+.field{
+	text-align: center;
+	margin-left: 42.7%;
+}

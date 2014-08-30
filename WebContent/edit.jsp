@@ -20,29 +20,7 @@
 	      rs = stmt.executeQuery(sql);
 		%>
 		
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Edit a movie | Online Movie Database Management</title>
-<style type="text/css">
-.field{
-	/*display: table;*/
-}
-input{
-	width: 200px;
-	display: table-cell;
-}
-label{
-	width: 200px;
-	font-weight: bold;
-	/*display: block;*/
-	display: table-cell;
-}
-</style>
-</head>
-<body>
-<h1>Online Movie Database Management</h1>
+<jsp:include page="header.jsp"/>
 <h3>Edit the movie details</h3>
 <%
 int no=1;
@@ -62,9 +40,9 @@ while(rs.next()){
 %>
 <form method="post" action="MovieUpdate">
 	<input name="id" type="number" value="<%=id%>" style="display:none"/>
-	<div class="field"><label>Movie : <%=rs.getString("NAME")%></label></div>
-	<div class="field"><label>Year of Release : <%=year%></label></div>
-	<div class="field"><label>Rating<input name="rating" type="number" min="1" max="10" step="0.1" value="<%=rs.getString("RATING")%>" placeholder="Rating"/></label></div>
+	<div class="field"><label><%=rs.getString("NAME")%></label></div>
+	<div class="field"><label><%=year%></label></div><br>
+	<div class="field"><label>Rating<input name="rating" type="number" min="1" max="10" step="0.1" value="<%=rs.getString("RATING")%>" placeholder="Rating" required/></label></div>
 	<div class="field"><label>Actors<br>
 	<input name="a1" type="text" placeholder="actor 1" value="<%=a1%>"/>
 	<input name="a2" type="text" placeholder="actor 2" value="<%=a2%>"/>

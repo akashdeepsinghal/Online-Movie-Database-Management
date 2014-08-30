@@ -75,4 +75,11 @@ public class MovieUpdate extends HttpServlet {
 		    response.setHeader("Location", site);
 	}
 
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	    System.out.println("Get method is not supported");
+	    String site = "list.jsp" ;
+	    response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+	    response.setHeader("Location", site);
+	}
+
 }

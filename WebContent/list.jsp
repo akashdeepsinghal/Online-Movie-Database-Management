@@ -18,12 +18,7 @@
 	      String sql = "SELECT * FROM MOVIES;";
 	      rs = stmt.executeQuery(sql);
 		%>
-		
-		<html>
-		<head>
-		<title>Movies List | Online Movie Database Management</title>
-		</head>
-		<body>
+		<jsp:include page="header.jsp"/>
 			<h2>Movies List</h2>
 			<table border="1">
 			<tr>

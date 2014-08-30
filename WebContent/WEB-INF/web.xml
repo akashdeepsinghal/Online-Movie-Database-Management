@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>11D020024</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>MovieAdd</servlet-name>
+    <servlet-class>movies.MovieAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MovieAdd</servlet-name>
+    <url-pattern>/MovieAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>NewTable</servlet-name>
+    <servlet-class>movies.NewTable</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewTable</servlet-name>
+    <url-pattern>/NewTable</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MovieDelete</servlet-name>
+    <servlet-class>movies.MovieDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MovieDelete</servlet-name>
+    <url-pattern>/MovieDelete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MovieUpdate</servlet-name>
+    <servlet-class>movies.MovieUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MovieUpdate</servlet-name>
+    <url-pattern>/MovieUpdate</url-pattern>
+  </servlet-mapping>
+</web-app>
